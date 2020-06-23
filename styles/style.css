@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+.header .navbar {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 1rem;
+}
+.header .navbar__links {
+  padding-right: 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.main .hero {
+  margin-top: -4rem;
+  height: 90vh;
+  width: 100vw;
+  background-image: linear-gradient(180deg, rgba(33, 196, 198, 0) 65%, white 100%), url("https://images.unsplash.com/photo-1576426863848-c21f53c60b19?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .hero__title {
+  font-size: 4em;
+  padding-left: 4rem;
+}
+.main .rutina {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main .rutina__texts {
+  max-width: 50rem;
+  padding: 1rem 0;
+}
+.main .rutina__texts__title {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+.main .makeRoutine {
+  display: flex;
+  justify-content: center;
+}
+.main .makeRoutine__button {
+  width: 12rem;
+  height: 4rem;
+  font-size: 1.5em;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */

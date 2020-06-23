@@ -25,6 +25,7 @@
             padding-right: 2rem;
             text-decoration: none;
             text-transform: uppercase;
+            color: #111;
         }
     }
 }
@@ -65,9 +66,24 @@
     }
 
     .makeRoutine {
-        display: flex;
-        // flex-direction: column;
-        justify-content: center;
+        padding-bottom: 30px;
+
+        .buttons {
+            display: flex;
+            // flex-direction: column;
+            justify-content: center;
+        }
+
+        .routineInputs {
+            display: flex;
+            flex-direction: column;
+            
+            align-items: center;
+            justify-content: center;
+            .input {
+                width: 300px;
+            }
+        }
 
         &__button{
             width: 12rem;

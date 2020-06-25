@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
-
+$color: rgb(54, 54, 54);
+$iconSelected: rgba(212, 34, 93, 0.76);
 
 * {
     margin: 0;
@@ -31,6 +32,7 @@
 }
 
 .main {
+    color: $color;
     .hero {
         margin-top: -4rem;
         height: 90vh;
@@ -74,6 +76,38 @@
             justify-content: center;
         }
 
+        .iconList {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .icon {
+                font-size: 3em;
+                color: rgb(51, 51, 54);
+                margin-left: 9px;
+
+            }
+            .flaticon-cream-1 {
+                margin-right: 20px;
+                color: $iconSelected;
+            }
+            .flaticon-mask {
+            }
+            .iconWrapper {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                &:hover .iconText{
+                    visibility: visible;
+                }
+                .iconText {
+                    visibility: hidden;
+                    font-size: 0.5em;
+                }
+            }
+        }
+
         .routineInputs {
             display: flex;
             flex-direction: column;
@@ -82,6 +116,9 @@
             justify-content: center;
             .input {
                 width: 300px;
+            }
+            .fa-times {
+                color: rgb(109, 108, 108);
             }
         }
 
@@ -95,5 +132,6 @@
             margin: 1rem;
             cursor: pointer;
         }
+        
     }
 }

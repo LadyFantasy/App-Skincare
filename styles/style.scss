@@ -8,6 +8,7 @@ $iconSelected: rgba(212, 34, 93, 0.76);
     font-family: 'Open Sans', sans-serif;
 }
 
+
 .header {
     .navbar {
         padding: 1rem 0;
@@ -90,8 +91,7 @@ $iconSelected: rgba(212, 34, 93, 0.76);
                 margin-right: 20px;
                 color: $iconSelected;
             }
-            .flaticon-mask {
-            }
+    
             .iconWrapper {
                 display: flex;
                 flex-direction: column;
@@ -103,22 +103,8 @@ $iconSelected: rgba(212, 34, 93, 0.76);
                 }
                 .iconText {
                     visibility: hidden;
-                    font-size: 0.5em;
+                    font-size: 0.8em;
                 }
-            }
-        }
-
-        .routineInputs {
-            display: flex;
-            flex-direction: column;
-            
-            align-items: center;
-            justify-content: center;
-            .input {
-                width: 300px;
-            }
-            .fa-times {
-                color: rgb(109, 108, 108);
             }
         }
 
@@ -132,6 +118,35 @@ $iconSelected: rgba(212, 34, 93, 0.76);
             margin: 1rem;
             cursor: pointer;
         }
+
+        .routineInputs {
+            display: flex;
+            flex-direction: column;
+            
+            align-items: center;
+            justify-content: center;
+
+            .inputWrapper{
+                margin-bottom: 1.5rem;
+
+                .input {
+                    width: 300px;
+                }
+
+                
+
+                .fa-times {
+                    color: rgb(109, 108, 108);
+                }
+            }
+
+            .tonerWrapper, .serumWrapper, .contornoWrapper, .mascarillaWrapper{
+                display: none;
+            }
+            
+        }
+
+        
         
     }
 }
